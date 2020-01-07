@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MMLockHeader.h"
 
 @interface ViewController ()
 
@@ -16,8 +17,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    id<MMLockProtocol> lock = [[PthreadMutexLockDemo alloc] init];
+//    [lock synchronizedTest];
+    
+//    id<MMLockProtocol> lock = [[PthreadRWLockDemo alloc] init];
+//    [lock synchronizedTest];
+    
+//    id<MMLockProtocol> lock = [[PthreadJoinDemo alloc] init];
+//    [lock synchronizedTest];
+    
+//    id<MMLockProtocol> lock = [[PthreadCondLockDemo alloc] init];
+//    [lock synchronizedTest];
+    
+    id<MMLockProtocol> lock = [[SemaphoreDemo alloc] init];
+    [lock synchronizedTest];
+    
+}
 
 @end
