@@ -7,7 +7,7 @@
 //
 
 #import "PthreadCondLockDemo.h"
-#import "MMLockHeader.h"
+#import <pthread.h>
 
 @interface PthreadCondLockDemo ()
 
@@ -25,7 +25,7 @@
     static pthread_mutex_t mutex_lock = PTHREAD_MUTEX_INITIALIZER; // 需要配合mutex互斥锁使用
     
     // 2.动态创建
-    pthread_cond_t cond_lock1;
+    static pthread_cond_t cond_lock1;
     pthread_cond_init(&cond_lock1, NULL);
     
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
@@ -49,6 +49,7 @@
         NSLog(@"%@===write===end",[NSThread currentThread]);
         
         pthread_cond_signal(&cond_lock); // 传递信号给等待的线程 而且是在解锁前
+//        pthread_cond_broadcast(pthread_cond_t * _Nonnull) // 通知所有线程
         
         pthread_mutex_unlock(&mutex_lock);
     }];

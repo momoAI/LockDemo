@@ -9,12 +9,12 @@
 #ifndef MMLockHeader_h
 #define MMLockHeader_h
 
-#import <pthread.h>
-#import <semaphore.h>
 #import "PthreadMutexLockDemo.h"
+#import "PthreadRecursionLockDemo.h"
 #import "PthreadRWLockDemo.h"
 #import "PthreadJoinDemo.h"
 #import "PthreadCondLockDemo.h"
 #import "SemaphoreDemo.h"
+#import "OSSpinLockDemo.h"
 
 #endif /* MMLockHeader_h */

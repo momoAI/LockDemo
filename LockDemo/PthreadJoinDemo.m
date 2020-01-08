@@ -7,7 +7,7 @@
 //
 
 #import "PthreadJoinDemo.h"
-#import "MMLockHeader.h"
+#import <pthread.h>
 
 @interface PthreadJoinDemo ()
 

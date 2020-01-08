@@ -32,8 +32,14 @@
     
 //    id<MMLockProtocol> lock = [[PthreadCondLockDemo alloc] init];
 //    [lock synchronizedTest];
+//
+//    id<MMLockProtocol> lock = [[SemaphoreDemo alloc] init];
+//    [lock synchronizedTest];
+//
+//    id<MMLockProtocol> lock = [[PthreadRecursionLockDemo alloc] init];
+//    [lock synchronizedTest];
     
-    id<MMLockProtocol> lock = [[SemaphoreDemo alloc] init];
+    id<MMLockProtocol> lock = [[OSSpinLockDemo alloc] init];
     [lock synchronizedTest];
     
 }

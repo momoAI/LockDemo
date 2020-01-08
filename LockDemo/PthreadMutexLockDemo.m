@@ -7,7 +7,7 @@
 //
 
 #import "PthreadMutexLockDemo.h"
-#import "MMLockHeader.h"
+#import <pthread.h>
 
 @implementation PthreadMutexLockDemo
 
@@ -18,7 +18,7 @@
     
     // 2.动态创建
     pthread_mutex_t lock1;
-    pthread_mutex_init(&lock1, NULL); // 可以根据需要配置pthread_mutexattr
+    pthread_mutex_init(&lock1, NULL); // 可以根据需要配置pthread_mutexattr NULL默认为互斥锁
     
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     [queue addOperationWithBlock:^{

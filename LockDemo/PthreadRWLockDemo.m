@@ -7,7 +7,7 @@
 //
 
 #import "PthreadRWLockDemo.h"
-#import "MMLockHeader.h"
+#import <pthread.h>
 
 @implementation PthreadRWLockDemo
 
@@ -17,7 +17,7 @@
     static pthread_rwlock_t lock = PTHREAD_RWLOCK_INITIALIZER;
     
     // 2.动态创建
-    pthread_rwlock_t lock1;
+    static pthread_rwlock_t lock1;
     pthread_rwlock_init(&lock1, NULL);
     
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
