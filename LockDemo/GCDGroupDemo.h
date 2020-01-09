@@ -2,7 +2,7 @@
 //  GCDGroupDemo.h
 //  LockDemo
 //
-//  Created by 研发部-陆续 on 2020/1/9.
+//  Created by MOMO on 2020/1/9.
 //  Copyright © 2020 MOMO. All rights reserved.
 //
 
