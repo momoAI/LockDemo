@@ -19,7 +19,7 @@
     // 2.动态创建
     pthread_mutex_t lock1;
     pthread_mutex_init(&lock1, NULL); // 可以根据需要配置pthread_mutexattr NULL默认为互斥锁
-    
+
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     [queue addOperationWithBlock:^{
         pthread_mutex_lock(&lock);
@@ -28,7 +28,7 @@
         NSLog(@"%@===write===end",[NSThread currentThread]);
         pthread_mutex_unlock(&lock);
     }];
-    
+
     [queue addOperationWithBlock:^{
         pthread_mutex_lock(&lock);
         NSLog(@"%@===read===start",[NSThread currentThread]);
@@ -36,6 +36,24 @@
         NSLog(@"%@===read===end",[NSThread currentThread]);
         pthread_mutex_unlock(&lock);
     }];
+    
+    // trylock
+//    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+//    [queue addOperationWithBlock:^{
+//        pthread_mutex_trylock(&lock); // 尝试加锁，如果当前mutex已经被锁或者不可用，就直接return了，不会把线程卡住
+//        NSLog(@"%@===write===start",[NSThread currentThread]);
+//        sleep(3);
+//        NSLog(@"%@===write===end",[NSThread currentThread]);
+//        pthread_mutex_unlock(&lock);
+//    }];
+//
+//    [queue addOperationWithBlock:^{
+//        pthread_mutex_lock(&lock);
+//        NSLog(@"%@===read===start",[NSThread currentThread]);
+//        sleep(2);
+//        NSLog(@"%@===read===end",[NSThread currentThread]);
+//        pthread_mutex_unlock(&lock);
+//    }];
     
     /*
      <NSThread: 0x2834863c0>{number = 5, name = (null)}===write===start

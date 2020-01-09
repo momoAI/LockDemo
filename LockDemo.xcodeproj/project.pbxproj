@@ -22,6 +22,12 @@
 		8E14DA3623C48DBF006DCFD8 /* SemaphoreDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E14DA3523C48DBF006DCFD8 /* SemaphoreDemo.m */; };
 		8E18FE4E23C579BD00FF8DF7 /* PthreadRecursionLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18FE4D23C579BD00FF8DF7 /* PthreadRecursionLockDemo.m */; };
 		8E18FE5423C584CB00FF8DF7 /* OSSpinLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18FE5323C584CB00FF8DF7 /* OSSpinLockDemo.m */; };
+		8E18FE5723C6C23100FF8DF7 /* OSUnfairLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18FE5623C6C23100FF8DF7 /* OSUnfairLockDemo.m */; };
+		8E18FE5A23C6CC3200FF8DF7 /* NSConditionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18FE5923C6CC3200FF8DF7 /* NSConditionDemo.m */; };
+		8E18FE5D23C6D12F00FF8DF7 /* NSConditionLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18FE5C23C6D12F00FF8DF7 /* NSConditionLockDemo.m */; };
+		8E18FE6023C6F5AD00FF8DF7 /* GCDGroupDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18FE5F23C6F5AD00FF8DF7 /* GCDGroupDemo.m */; };
+		8E18FE6323C6FB3C00FF8DF7 /* GCDBarrierDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18FE6223C6FB3C00FF8DF7 /* GCDBarrierDemo.m */; };
+		8E18FE6623C7095A00FF8DF7 /* NSOperationDependencyDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18FE6523C7095A00FF8DF7 /* NSOperationDependencyDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +80,18 @@
 		8E18FE4D23C579BD00FF8DF7 /* PthreadRecursionLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PthreadRecursionLockDemo.m; sourceTree = "<group>"; };
 		8E18FE5223C584CB00FF8DF7 /* OSSpinLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSSpinLockDemo.h; sourceTree = "<group>"; };
 		8E18FE5323C584CB00FF8DF7 /* OSSpinLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockDemo.m; sourceTree = "<group>"; };
+		8E18FE5523C6C23100FF8DF7 /* OSUnfairLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSUnfairLockDemo.h; sourceTree = "<group>"; };
+		8E18FE5623C6C23100FF8DF7 /* OSUnfairLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSUnfairLockDemo.m; sourceTree = "<group>"; };
+		8E18FE5823C6CC3200FF8DF7 /* NSConditionDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionDemo.h; sourceTree = "<group>"; };
+		8E18FE5923C6CC3200FF8DF7 /* NSConditionDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionDemo.m; sourceTree = "<group>"; };
+		8E18FE5B23C6D12F00FF8DF7 /* NSConditionLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionLockDemo.h; sourceTree = "<group>"; };
+		8E18FE5C23C6D12F00FF8DF7 /* NSConditionLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockDemo.m; sourceTree = "<group>"; };
+		8E18FE5E23C6F5AD00FF8DF7 /* GCDGroupDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDGroupDemo.h; sourceTree = "<group>"; };
+		8E18FE5F23C6F5AD00FF8DF7 /* GCDGroupDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDGroupDemo.m; sourceTree = "<group>"; };
+		8E18FE6123C6FB3C00FF8DF7 /* GCDBarrierDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDBarrierDemo.h; sourceTree = "<group>"; };
+		8E18FE6223C6FB3C00FF8DF7 /* GCDBarrierDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDBarrierDemo.m; sourceTree = "<group>"; };
+		8E18FE6423C7095A00FF8DF7 /* NSOperationDependencyDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationDependencyDemo.h; sourceTree = "<group>"; };
+		8E18FE6523C7095A00FF8DF7 /* NSOperationDependencyDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationDependencyDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +193,18 @@
 				8E14DA3523C48DBF006DCFD8 /* SemaphoreDemo.m */,
 				8E18FE5223C584CB00FF8DF7 /* OSSpinLockDemo.h */,
 				8E18FE5323C584CB00FF8DF7 /* OSSpinLockDemo.m */,
+				8E18FE5523C6C23100FF8DF7 /* OSUnfairLockDemo.h */,
+				8E18FE5623C6C23100FF8DF7 /* OSUnfairLockDemo.m */,
+				8E18FE5823C6CC3200FF8DF7 /* NSConditionDemo.h */,
+				8E18FE5923C6CC3200FF8DF7 /* NSConditionDemo.m */,
+				8E18FE5B23C6D12F00FF8DF7 /* NSConditionLockDemo.h */,
+				8E18FE5C23C6D12F00FF8DF7 /* NSConditionLockDemo.m */,
+				8E18FE5E23C6F5AD00FF8DF7 /* GCDGroupDemo.h */,
+				8E18FE5F23C6F5AD00FF8DF7 /* GCDGroupDemo.m */,
+				8E18FE6123C6FB3C00FF8DF7 /* GCDBarrierDemo.h */,
+				8E18FE6223C6FB3C00FF8DF7 /* GCDBarrierDemo.m */,
+				8E18FE6423C7095A00FF8DF7 /* NSOperationDependencyDemo.h */,
+				8E18FE6523C7095A00FF8DF7 /* NSOperationDependencyDemo.m */,
 			);
 			name = Lock;
 			sourceTree = "<group>";
@@ -310,15 +340,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E14DA2A23C45138006DCFD8 /* PthreadMutexLockDemo.m in Sources */,
+				8E18FE5D23C6D12F00FF8DF7 /* NSConditionLockDemo.m in Sources */,
 				8E18FE5423C584CB00FF8DF7 /* OSSpinLockDemo.m in Sources */,
 				8E14D9F823C41BBE006DCFD8 /* ViewController.m in Sources */,
 				8E14DA3623C48DBF006DCFD8 /* SemaphoreDemo.m in Sources */,
 				8E14DA3323C484E9006DCFD8 /* PthreadCondLockDemo.m in Sources */,
+				8E18FE5A23C6CC3200FF8DF7 /* NSConditionDemo.m in Sources */,
+				8E18FE5723C6C23100FF8DF7 /* OSUnfairLockDemo.m in Sources */,
+				8E18FE6323C6FB3C00FF8DF7 /* GCDBarrierDemo.m in Sources */,
 				8E18FE4E23C579BD00FF8DF7 /* PthreadRecursionLockDemo.m in Sources */,
 				8E14DA2D23C4629D006DCFD8 /* PthreadRWLockDemo.m in Sources */,
 				8E14D9F223C41BBE006DCFD8 /* AppDelegate.m in Sources */,
+				8E18FE6623C7095A00FF8DF7 /* NSOperationDependencyDemo.m in Sources */,
 				8E14DA3023C46B0F006DCFD8 /* PthreadJoinDemo.m in Sources */,
 				8E14DA0323C41BBF006DCFD8 /* main.m in Sources */,
+				8E18FE6023C6F5AD00FF8DF7 /* GCDGroupDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

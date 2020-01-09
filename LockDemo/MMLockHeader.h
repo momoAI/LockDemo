@@ -16,5 +16,11 @@
 #import "PthreadCondLockDemo.h"
 #import "SemaphoreDemo.h"
 #import "OSSpinLockDemo.h"
+#import "OSUnfairLockDemo.h"
+#import "NSConditionDemo.h"
+#import "NSConditionLockDemo.h"
+#import "GCDGroupDemo.h"
+#import "GCDBarrierDemo.h"
+#import "NSOperationDependencyDemo.h"
 
 #endif /* MMLockHeader_h */
